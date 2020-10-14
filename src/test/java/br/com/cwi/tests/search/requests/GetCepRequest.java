@@ -13,4 +13,12 @@ public class GetCepRequest {
                 .get(cep+"/json/")
                 .prettyPeek();
     }
+
+    public Response cepByStreet(String stateCode, String city, String streetLastname){
+        return given()
+                .header("Content-Type", "application/json")
+                .when()
+                .get(stateCode+"/"+city+"/"+streetLastname+"/json/")
+                .prettyPeek();
+    }
 }

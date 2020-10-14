@@ -1,0 +1,6 @@
+Cenário: Consulta CEP por rua
+Dado que o usuário insere um código de estado
+E uma cidade
+E o sobrenome da rua
+Quando o serviço é consultado
+Então são retornados os CEP, logradouro, complemento, bairro, localidade, uf e ibge correspondentes aos dados inseridos
